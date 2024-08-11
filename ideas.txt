@@ -1,0 +1,3 @@
+Mana Being able to be passed from player to player though hand-to-hand contact (Animation)
+Lower level makes it unstable but higher lever you get easier it gets
+Over-drained Mana will make the player get weaker and weaker, then make players faint

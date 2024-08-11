@@ -2,7 +2,6 @@ package net.kmidnight.midnightsfwmod;
 
 import com.mojang.logging.LogUtils;
 import net.kmidnight.midnightsfwmod.blocks.ModBlocks;
-import net.kmidnight.midnightsfwmod.command.FwCommand;
 import net.kmidnight.midnightsfwmod.items.ModCreativeModTabs;
 import net.kmidnight.midnightsfwmod.items.ModItems;
 import net.minecraft.client.Minecraft;
@@ -20,7 +19,7 @@ import org.slf4j.Logger;
 @Mod(MidnightsfwMod.MODID)
 public class MidnightsfwMod {
     public static final String MODID = "midnightsfwmod";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public MidnightsfwMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -32,7 +31,6 @@ public class MidnightsfwMod {
         ModCreativeModTabs.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.register(FwCommand.class);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

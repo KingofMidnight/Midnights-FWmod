@@ -1,5 +1,8 @@
 {
   "item.midnightsfwmod.wooden_dagger": "Wooden Dagger",
 
+  "commands.midnightsfwmod.mana.set": "Mana set to %s",
+  "commands.midnightsfwmod.mana.add": "%s Mana Added",
+
   "creativetab.kmidnight_tab": "Midnight's Fantasy World Mod"
 }
